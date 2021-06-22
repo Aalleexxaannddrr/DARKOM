@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "mokrad company",
+  "mongoUri": "mongodb+srv://Dmitry:darkomcompany@cluster0.gad5c.mongodb.net/darkom?retryWrites=true&w=majority"
+}

@@ -1,0 +1,63 @@
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.column1 {
+  float: left !important;
+  width: 31.8% !important;
+  padding: 30px !important;
+  text-align: center !important;
+  font-size: 25px !important;
+  cursor: pointer !important;
+  color: white !important;
+  border-style: outset !important;
+  border-width: 5px !important;
+  border-color:gray !important;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.4) !important;
+  background-color: #003D5D !important;
+  margin: 7px !important;
+  height: 100px !important;
+} 
+ 
+.containerTab {
+  padding: 20px !important;
+  color: white !important;
+}
+ 
+.row:after {
+  content: "" !important;
+  display: table !important;
+  clear: both !important;
+}
+ 
+.closebtn {
+  float: right !important;
+  color: white !important;
+  font-size: 35px !important;
+  cursor: pointer !important;
+}
+
+.about {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto';
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row {
+  padding-bottom: 15px;
+}
