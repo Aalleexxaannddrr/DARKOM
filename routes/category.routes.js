@@ -1,13 +1,14 @@
 const { Router } = require('express')
 const Category = require('../models/category')
 const router = Router()
+const ApiError = require('../error/apiError')
 
 router.get('/:id', async (req, res) => {
   try {
       const category = await Category.findById(req.params.id)
       res.json(category)
   } catch (e) {
-      res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+      next(ApiError.badRequest(e.message))
   }
 })
 
@@ -34,7 +35,7 @@ router.post('/add', async (req, res) => {
       res.status(201).json({ category })
 
   } catch (e) {
-      res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+      next(ApiError.badRequest(e.message))
   }
 
 })
