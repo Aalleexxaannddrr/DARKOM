@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     res.json(category)
     console.log(category)
   } catch (e) {
-      res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
+      next(ApiError.badRequest(e.message))
   }
 })
 
@@ -37,6 +37,13 @@ router.post('/add', async (req, res) => {
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })
   }
 
+})
+router.post('/delete', async (req, res)=>{
+  try {
+
+  }  catch (e){
+      next(ApiError.badRequest(e.message))
+  }
 })
 
 module.exports = router
