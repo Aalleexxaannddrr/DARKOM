@@ -55,9 +55,19 @@ export const Navbar = () => {
                       <a href="#default" key={i}>{ pricol }</a>
                     )
                   })}
-                  <a href="#default" >dfdsfuh</a>
-                  <a href="#default" >dfdsfuh</a>
-                  <a href="#default" >dfdsfuh</a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                  </div>
+                  <div className="column">
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                  </div>
+                  <div className="column">
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
+                    <a href="#default">Мультипликаторы крутящего момента ручные </a>
                 </div>
               </div>
             </div>

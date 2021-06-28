@@ -3,17 +3,17 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #003D5D;
-  padding: 20px 10px;
+  background-color: #FFFFFF;
+  padding: 5px 5px;
+  color:black;
 }
 
 /* Style the header links */
 .header a {
-  float: left;
-  color: black;
+  float:left;
   text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 12px;
+  color: black;
+  padding: 20px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
@@ -22,8 +22,11 @@
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+  text-align: left;
+  float:left;
+  padding: 0;
+  font-size:0;
+  line-height: 0;
 }
 
 /* Change the background color on mouse-over */
@@ -52,15 +55,21 @@
 /* MEGA-MENU */
 
 *{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
+  font-size: 18px;
+  text-align:center;
+  padding-top:7.9px
+}
+.dropdown-content .row{
+  padding-bottom: 0;
 }
 
 /* Dropdown button */
@@ -68,7 +77,7 @@
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font: inherit; /* Important for vertical align on mobile phones */
@@ -88,7 +97,7 @@
   width: 100%;
   left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 15;
 }
 
 /* Mega Menu header, if needed */
@@ -108,8 +117,11 @@
   float: left;
   width: 33.33%;
   padding: 10px;
-  background-color: #ccc;
-  height: 250px;
+  background-color: #f1efef;
+}
+.dropdown-content h2{
+  float: right;
+  margin-right: 20px;
 }
 
 /* Style links inside the columns */
@@ -135,8 +147,8 @@
 }
 
 @media(max-width: 650px){
-	.column {
-		width: 100%;
-		height: auto;
-	}
+  .column {
+    width: 100%;
+    height: auto;
+  }
 }
