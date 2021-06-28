@@ -60,49 +60,49 @@ export const MainPage = () => {
         <div className="column1" onClick={() => {openTab('b8')}}>Категория 8</div>
         <div className="column1" onClick={() => {openTab('b9')}}>Категория 9</div>
       </div>
-      <div id="b1" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b1" className="containerTab">
         <span onClick={ () => { document.getElementById("b1").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 1</h2>
         <p>Lorem ipsum..</p>
       </div>
      
-      <div id="b2" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b2" className="containerTab">
         <span onClick={() => { document.getElementById("b2").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 2</h2>
         <p>Lorem ipsum..</p>
       </div>
     
-      <div id="b3" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b3" className="containerTab">
         <span onClick={() => { document.getElementById("b3").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 3</h2>
         <p>Lorem ipsum..</p>
       </div>
-      <div id="b4" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b4" className="containerTab">
         <span onClick={() => { document.getElementById("b4").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 4</h2>
         <p>Lorem ipsum..</p>
       </div>
-      <div id="b5" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b5" className="containerTab">
         <span onClick={() => { document.getElementById("b5").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 5</h2>
         <p>Lorem ipsum..</p>
       </div>
-      <div id="b6" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b6" className="containerTab">
         <span onClick={() => { document.getElementById("b6").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 6</h2>
         <p>Lorem ipsum..</p>
       </div>
-      <div id="b7" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b7" className="containerTab">
         <span onClick={() => { document.getElementById("b7").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 7</h2>
         <p>Lorem ipsum..</p>
       </div>
-      <div id="b8" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b8" className="containerTab">
         <span onClick={() => { document.getElementById("b8").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 8</h2>
         <p>Lorem ipsum..</p>
       </div>  
-      <div id="b9" className="containerTab" style={{display: 'none', background: 'black'}}>
+      <div id="b9" className="containerTab">
         <span onClick={() => { document.getElementById("b9").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 9</h2>
         <p>Lorem ipsum..</p>

@@ -31,8 +31,11 @@
 } 
  
 .containerTab {
+
   padding: 20px !important;
   color: white !important;
+  display: none;
+  background: lightslategray;
 }
  
 .row:after {
