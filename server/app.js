@@ -12,6 +12,7 @@ app.use(require("body-parser").json())
 app.use('/api/category', require('./routes/category.routes'))
 app.use('/api/subcategory', require('./routes/subcategory.routes'))
 app.use('/api/product', require('./routes/product.routes'))
+app.use('/api/auth', require('./routes/auth.routes'))
 
 async function start() {
   try {

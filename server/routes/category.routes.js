@@ -16,13 +16,12 @@ router.get('/', async (req, res,next) => {
   try {
     const category = await Category.find()
     res.json(category)
-    console.log(category)
   } catch (e) {
       next(ApiError.badRequest(e.message))
   }
 })
 
-router.post('/add', async (req, res) => {
+router.post('/add', async (req, res, next) => {
   try {
     const { name, description, imgUrl } = req.body
     const category = new Category({
@@ -30,12 +29,11 @@ router.post('/add', async (req, res) => {
     })
 
     await category.save()
-    console.log(category)
 
     res.status(201).json({ category })
 
   } catch (e) {
-      // next(ApiError.badRequest(e.message))
+      next(ApiError.badRequest(e.message))
   }
 
 })

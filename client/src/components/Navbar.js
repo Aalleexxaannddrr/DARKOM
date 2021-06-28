@@ -1,12 +1,14 @@
-import React, {useCallback, useState, useEffect} from 'react'
+import React, {useCallback, useState, useEffect, useContext} from 'react'
 import { useHttp } from '../hooks/http.hook'
 import './navbar.css'
 import { Loader } from '../components/Loader'
+import {AuthContext} from "../context/AuthContext";
 
 export const Navbar = () => {
   
   const {request, loading} = useHttp()
   const [categories, setCategories] = useState([])
+  const auth = useContext(AuthContext)
 
   const getInfo = useCallback(async () => {
     try {
@@ -28,6 +30,7 @@ export const Navbar = () => {
     <nav>
       <div className="header">
         <a href="#default" className="logo">CompanyLogo</a>
+        {auth.isAuthenticated && <a>АДМИНИСТРАТОР</a>}
         <div className="header-right">
           <a href="#home">Главная</a>
           {categories.map((i, category) => {
