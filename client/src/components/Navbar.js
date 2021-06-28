@@ -49,12 +49,6 @@ export const Navbar = () => {
               </div>
               <div className="row">
                 <div className="column">
-                  {categories.map((i, category) => {
-                    var pricol = category.name
-                    return (
-                      <a href="#default" key={i}>{ pricol }</a>
-                    )
-                  })}
                     <a href="#default">Мультипликаторы крутящего момента ручные </a>
                     <a href="#default">Мультипликаторы крутящего момента ручные </a>
                     <a href="#default">Мультипликаторы крутящего момента ручные </a>
