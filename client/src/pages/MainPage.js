@@ -107,6 +107,6 @@ export const MainPage = () => {
         <h2>Box 9</h2>
         <p>Lorem ipsum..</p>
       </div>
-      </div>
+    </div>
   )
 }

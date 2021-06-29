@@ -1,12 +1,13 @@
 import {useState, useCallback, useEffect} from 'react'
 
-const storageName = 'userData'
+const storageName = 'adminData'
 
 export const useAuth = () => {
     const [token, setToken] = useState(null)
     const [adminId, setAdminId] = useState(null)
 
     const login = useCallback((jwtToken, id) => {
+        console.log(id)
         setToken(jwtToken)
         setAdminId(id)
 

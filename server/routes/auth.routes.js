@@ -20,7 +20,7 @@ router.post(
                     message: 'Некорректные данные при регистрации'
                 })
             }
-            console.log(req.body)
+            const { login, password } = req.body
             const candidate = await Admin.findOne({ login })
             if (candidate) {
                 res.status(400).json({ message: 'Такой пользователь уже существует' })
