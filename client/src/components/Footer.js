@@ -52,7 +52,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="modalBtnContent">
-        <button className="modalBtn" id="myBtn" onClick={() => openModal()}>Open Modal</button>
+        <button className="modalBtn" id="myBtn" onClick={() => openModal()}>Заявка на обратную связь</button>
       </div>
       <div id="myModal" className="modal">
         <div className="modal-content">
