@@ -4,6 +4,7 @@ import {Slider} from "../components/slider";
 
 
 
+
 export const MainPage = () => {
 
   const openTab = async (tabName) => {
@@ -20,6 +21,7 @@ export const MainPage = () => {
         <div>
             <Slider/>
         </div>
+    <b></b>
      <div className="about">
         <b>О компании</b>
         <p></p>
