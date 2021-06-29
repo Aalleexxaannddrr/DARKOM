@@ -11,8 +11,8 @@ import {AuthContext} from "./context/AuthContext";
 
 function App() {
 
-    const {token, login, logout, adminId} = useAuth()
-    const isAuthenticated = !!token
+  const {token, login, logout, adminId} = useAuth()
+  const isAuthenticated = !!token
   const routes = useRoutes(isAuthenticated)
   // const loading = useHttp()
 
