@@ -3,6 +3,7 @@ import './main.css'
 import {Slider} from "../components/slider";
 
 
+
 export const MainPage = () => {
 
   const openTab = async (tabName) => {
@@ -16,9 +17,10 @@ export const MainPage = () => {
   
   return (
     <div className="slide-container">
-        <Slider/>
-
-      <div className="about">
+        <div>
+            <Slider/>
+        </div>
+     <div className="about">
         <b>О компании</b>
         <p></p>
         <b>ООО «Дарком» создано в 2016 году. Мы занимаемся обеспечением промышленных предприятий оборудованием и

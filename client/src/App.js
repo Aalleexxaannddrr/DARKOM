@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import {useRoutes} from './routes'
 import { Navbar } from './components/Navbar'
 import {Footer} from './components/Footer'
+import {Slider} from './components/slider'
+
 // import { Loader } from './components/Loader'
 // import { useHttp } from './hooks/http.hook'
 
@@ -23,7 +25,7 @@ function App() {
       <Navbar />
       <div className="container">
         {routes}
-      </div>
+         </div>
       <Footer />
     </Router>
   )
