@@ -1,12 +1,7 @@
 import React from 'react'
 import './main.css'
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
+import {Slider} from "../components/slider";
 
-const slideImages = [img1, img2, img3];
 
 export const MainPage = () => {
 
@@ -21,23 +16,8 @@ export const MainPage = () => {
   
   return (
     <div className="slide-container">
-        <Slide easing="ease">
-          <div className="each-slide">
-            <div style={{backgroundImage: `url(${slideImages[0]})`}}>
-              <span>Slide 1</span>
-            </div>
-          </div>
-          <div className="each-slide">
-            <div style={{backgroundImage: `url(${slideImages[1]})`}}>
-              <span>Slide 2</span>
-            </div>
-          </div>
-          <div className="each-slide">
-            <div style={{backgroundImage: `url(${slideImages[2]})`}}>
-              <span>Slide 3</span>
-            </div>
-          </div>
-      </Slide>
+        <Slider/>
+
       <div className="about">
         <b>О компании</b>
         <p></p>
