@@ -2,9 +2,9 @@ import React from 'react'
 import './main.css'
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import slide1 from "../img/img1.jpg"
-import slide2 from "../img/img1.jpg"
-import slide3 from "../img/img1.jpg"
+import slide1 from "../img/img1.png"
+import slide2 from "../img/img1.png"
+import slide3 from "../img/img1.png"
 
 
 
