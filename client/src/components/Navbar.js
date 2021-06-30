@@ -3,6 +3,7 @@ import { useHttp } from '../hooks/http.hook'
 import './navbar.css'
 import { Loader } from '../components/Loader'
 import {AuthContext} from "../context/AuthContext";
+import logo from "../img/logo.png"
 
 export const Navbar = () => {
   
@@ -27,12 +28,13 @@ export const Navbar = () => {
   }
 
   return (
-    <nav>
-      <div className="header">
-        <a href="#default" className="logo">CompanyLogo</a>
+    <nav className="header">
+        <a className="logo">
+            <img href="/" className="logo" src={logo} align="company logo"></img>
+        </a>
         {auth.isAuthenticated && <a>АДМИНИСТРАТОР</a>}
         <div className="header-right">
-          <a href="#home">Главная</a>
+          <a href="/main">Главная</a>
           <div className="dropdown">
             <button className="dropbtn" href="#contact">О продукции
               <i className="fa fa-caret-down"></i> 
@@ -63,7 +65,6 @@ export const Navbar = () => {
           <a href="#about">О компании</a>
           <a href="#about">Контакты</a>
         </div>
-      </div>
     </nav>
   )
 }
