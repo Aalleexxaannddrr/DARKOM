@@ -1,6 +1,10 @@
 import React from 'react'
 import './main.css'
-import {Slider} from "../components/slider";
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+import slide1 from "../img/img1.jpg"
+import slide2 from "../img/img1.jpg"
+import slide3 from "../img/img1.jpg"
 
 
 
@@ -18,9 +22,16 @@ export const MainPage = () => {
   
   return (
     <div className="slide-container">
-        <div>
-            <Slider/>
-        </div>
+       <Carousel
+            plugins={[
+                'arrows',
+                'infinite'
+            ]}
+        >
+            <img src={slide1} />
+            <img src={slide2} />
+            <img src={slide3} />
+        </Carousel>
     <b></b>
      <div className="about">
         <b>О компании</b>

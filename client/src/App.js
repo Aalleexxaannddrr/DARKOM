@@ -28,6 +28,7 @@ function App() {
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"></link>
           <Navbar />
+
           <div className="container">
             {routes}
           </div>
