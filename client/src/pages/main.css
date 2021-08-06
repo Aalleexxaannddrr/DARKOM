@@ -1,3 +1,17 @@
+.plus-btn {
+  width: 31.8% !important;
+  padding: 30px !important;
+  text-align: center !important;
+  font-size: 25px !important;
+  cursor: pointer !important;
+  color: white !important;
+  background-color: #446c22 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 20px;
+  height: 100px !important;
+  border-radius: 19px
+}
 
 .column1 {
   float: left !important;

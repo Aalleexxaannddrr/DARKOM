@@ -55,6 +55,7 @@ export const MainPage = () => {
         <div className="column1" onClick={() => {openTab('b8')}}>Категория 8</div>
         <div className="column1" onClick={() => {openTab('b9')}}>Категория 9</div>
       </div>
+        <div className="plus-btn">Добавить</div>
       <div id="b1" className="containerTab">
         <span onClick={ () => { document.getElementById("b1").style.display = 'none' }} className="closebtn">x</span>
         <h2>Box 1</h2>

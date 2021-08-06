@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import {useRoutes} from './routes'
@@ -6,15 +5,15 @@ import { Navbar } from './components/Navbar'
 import {Footer} from './components/Footer'
 import {useAuth} from "./hooks/auth.hook";
 import {AuthContext} from "./context/AuthContext";
-// import { Loader } from './components/Loader'
-// import { useHttp } from './hooks/http.hook'
+import { Loader } from './components/Loader'
+import { useHttp } from './hooks/http.hook'
 
 function App() {
 
   const {token, login, logout, adminId} = useAuth()
   const isAuthenticated = !!token
   const routes = useRoutes(isAuthenticated)
-  // const loading = useHttp()
+  const loading = useHttp()
 
   // if (loading) {
   //   return <Loader />

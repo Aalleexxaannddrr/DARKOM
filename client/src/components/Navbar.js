@@ -7,7 +7,7 @@ import logo from "../img/logo.png"
 
 export const Navbar = () => {
   
-  const {request, loading} = useHttp()
+  const {request} = useHttp()
   const [categories, setCategories] = useState([])
   const auth = useContext(AuthContext)
 
@@ -22,17 +22,13 @@ export const Navbar = () => {
   useEffect(() => {
       getInfo()
   }, [getInfo])
-  
-  if (loading) {
-    return <Loader />
-  }
 
   return (
     <nav className="header">
-        <a className="logo">
-            <img href="/" className="logo" src={logo} align="company logo"></img>
+        <a href="/" className="logo">
+            <img className="logo" src={logo} alt="company logo"></img>
         </a>
-        {auth.isAuthenticated && <a>АДМИНИСТРАТОР</a>}
+        {auth.isAuthenticated && <a href="/admin_page">КАТАЛОГ</a>}
         <div className="header-right">
           <a href="/main">Главная</a>
           <div className="dropdown">
